@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ton formulaire — Madame Lune</title>
+<link rel="stylesheet" href="styles.css?v=4">
+<style>
+label{display:block;margin:14px 0 4px;color:var(--amethyste);font-weight:bold;font-size:.92rem}
+input,select,textarea{width:100%;padding:12px;border:1px solid rgba(91,63,141,.3);border-radius:8px;font-family:inherit;font-size:1rem;background:#fff;color:var(--encre)}
+textarea{min-height:110px;resize:vertical}
+#merci{display:none;text-align:center;padding:30px 0}
+#merci h3{font-size:1.3rem}
+</style></head><body>
+<div class="annonce">🌙 Ta lecture sera préparée avec soin — réponse sous 48h</div>
+<div class="logo"><a href="index.html">MADAME <span>LUNE</span></a></div>
+<nav><a href="index.html">Accueil</a><a href="tirages.html">Tirages</a><a href="apropos.html">À propos</a><a href="faq.html">FAQ</a></nav>
+<div class="wrap">
+<header class="hero" style="padding:30px 0 6px"><h1 style="font-size:1.5rem">💌 Ton formulaire de lecture</h1>
+<p class="tag">Remplis-le avec ton cœur — plus c'est sincère, plus la lecture est juste.</p></header>
+<section>
+  <form id="f" class="card">
+    <label>Ta commande</label>
+    <select name="produit" required>
+      <option value="">— Choisis ta lecture —</option>
+      <option>Trio de Naissance (gratuit)</option>
+      <option>Vos âmes sont-elles liées ? (9€)</option>
+      <option>Ton Ciel de Naissance (29€)</option>
+      <option>Tirage personnalisé — 1 question (39€)</option>
+      <option>Ton Année révélée (49€)</option>
+      <option>Le Grand Tirage + rituel (79€)</option>
+    </select>
+    <label>Ton prénom</label><input name="prenom" required>
+    <label>Ton email (où recevoir la lecture)</label><input type="email" name="email" required>
+    <label>Ta date de naissance</label><input type="date" name="naissance" required>
+    <label>Heure de naissance (si connue)</label><input type="time" name="heure">
+    <label>Ville de naissance</label><input name="ville">
+    <label>Ta question (pour les tirages)</label>
+    <textarea name="question" placeholder="Ex : Pourquoi est-il distant depuis quelques semaines ? Va-t-il revenir ?"></textarea>
+    <label>Numéro de commande Hotmart (reçu par email)</label><input name="commande">
+    <button class="btn" style="width:100%;border:none;cursor:pointer" type="submit">Envoyer à Madame Lune 🌙</button>
+  </form>
+  <div id="merci" class="card">
+    <h3>🌙 C'est bien reçu.</h3>
+    <p style="margin-top:10px">Ta lecture est entre mes mains. Tu la recevras par email sous 48h.<br>
+    En attendant, respire — les cartes travaillent déjà pour toi. ✨</p>
+  </div>
+</section>
+<footer><p>Madame Lune · <a href="mentions.html">Mentions &amp; conditions</a></p></footer>
+</div>
+<script>
+document.getElementById('f').addEventListener('submit', async function(e){
+  e.preventDefault();
+  const data = Object.fromEntries(new FormData(this).entries());
+  const btn = this.querySelector('button'); btn.textContent = 'Envoi en cours…'; btn.disabled = true;
+  try{
+    const r = await fetch('http://187.127.47.3:11435/commande', {
+      method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(data)});
+    if(!r.ok) throw new Error();
+    this.style.display='none';
+    document.getElementById('merci').style.display='block';
+  }catch(err){
+    btn.textContent = 'Réessayer — ou écris à contact@madame-lune.fr'; btn.disabled = false;
+  }
+});
+</script>
+</body></html>
