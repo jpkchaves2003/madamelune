@@ -1,109 +1,48 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
+<!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Madame Lune — Tirages & Guidance</title>
-<meta name="description" content="Tirages de tarot personnalisés par Madame Lune. Réponse écrite, intime et bienveillante, sous 48h.">
-<style>
-:root{--bleu:#0d1b3e;--bleu2:#122552;--or:#e8b54d;--rose:#fe2c55;--txt:#f4efe6}
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:var(--bleu);color:var(--txt);font-family:Georgia,'Times New Roman',serif;line-height:1.6}
-.wrap{max-width:680px;margin:0 auto;padding:0 20px}
-header{text-align:center;padding:48px 0 32px}
-header img{width:132px;height:132px;border-radius:50%;object-fit:cover;object-position:top;border:3px solid var(--or);box-shadow:0 0 40px rgba(232,181,77,.35)}
-h1{font-size:2rem;color:var(--or);letter-spacing:.06em;margin-top:16px}
-.tag{font-style:italic;opacity:.85;margin-top:6px}
-.lune{color:var(--or)}
-section{padding:28px 0}
-h2{color:var(--or);font-size:1.3rem;text-align:center;margin-bottom:22px;letter-spacing:.05em}
-.card{background:var(--bleu2);border:1px solid rgba(232,181,77,.35);border-radius:14px;padding:24px;margin-bottom:18px;box-shadow:0 6px 24px rgba(0,0,0,.35)}
-.card h3{color:var(--or);font-size:1.12rem;margin-bottom:6px}
-.prix{font-size:1.6rem;color:#fff;font-weight:bold;margin:10px 0}
-.prix small{font-size:.85rem;opacity:.7;font-weight:normal}
-.card p{font-size:.97rem;opacity:.92}
-.btn{display:block;text-align:center;background:linear-gradient(135deg,var(--or),#c99633);color:var(--bleu);font-weight:bold;text-decoration:none;padding:14px;border-radius:10px;margin-top:16px;font-size:1.05rem;letter-spacing:.03em}
-.btn:active{transform:scale(.98)}
-.badge{display:inline-block;background:rgba(232,181,77,.15);border:1px solid var(--or);color:var(--or);font-size:.72rem;padding:3px 10px;border-radius:99px;letter-spacing:.08em;text-transform:uppercase}
-.etapes{display:grid;gap:14px}
-.etape{display:flex;gap:14px;align-items:flex-start}
-.num{flex:0 0 34px;height:34px;border-radius:50%;background:var(--or);color:var(--bleu);font-weight:bold;display:flex;align-items:center;justify-content:center;font-family:sans-serif}
-.note{text-align:center;font-size:.9rem;opacity:.8;font-style:italic;padding:10px 0 0}
-footer{border-top:1px solid rgba(232,181,77,.25);margin-top:36px;padding:26px 0 40px;font-size:.78rem;opacity:.65;text-align:center}
-.sep{ text-align:center;color:var(--or);opacity:.8;letter-spacing:.5em;padding:6px 0}
-</style>
-</head>
-<body>
+<title>Madame Lune — Tirages &amp; Guidance</title>
+<meta name="description" content="Tirages de tarot personnalisés, écrits pour toi sous 48h. Madame Lune, ta confidente mystique.">
+<link rel="stylesheet" href="styles.css"></head><body>
+<nav><a href="index.html" class="on">Accueil</a><a href="tirages.html" class="N2">Tirages</a><a href="apropos.html" class="N3">À propos</a><a href="faq.html" class="N4">FAQ</a></nav>
 <div class="wrap">
-
-<header>
+<header class="hero">
   <img src="madame.jpeg" alt="Madame Lune">
-  <h1>MADAME <span class="lune">LUNE</span> 🌙</h1>
+  <h1>MADAME LUNE 🌙</h1>
   <p class="tag">Ta confidente mystique — tirages écrits, intimes et bienveillants</p>
 </header>
-
-<div class="sep">✦ ✦ ✦</div>
-
-<section id="tirages">
+<div class="sep">✦ <b>✦</b> ✦</div>
+<section>
   <h2>✨ Les Tirages</h2>
-
-  <div class="card">
-    <span class="badge">Pour commencer</span>
+  <div class="card"><span class="badge">Pour commencer</span>
     <h3>Vos âmes sont-elles liées ?</h3>
-    <div class="prix">9 € <small>· lecture envoyée par email</small></div>
-    <p>Une mini-lecture sur votre connexion : ce qui vous unit, ce qui bloque,
-    et le premier pas à faire. Douce, honnête, sans détour.</p>
-    <a class="btn" href="#PAYPAL_9">Recevoir ma lecture ➜</a>
-  </div>
-
-  <div class="card">
-    <span class="badge">Le plus demandé</span>
+    <div class="prix">9 €</div>
+    <p>Une mini-lecture sur votre connexion : ce qui vous unit, ce qui bloque, le premier pas à faire.</p>
+    <a class="btn" href="tirages.html#ames">Découvrir ➜</a></div>
+  <div class="card"><span class="badge or">Le plus demandé</span>
     <h3>Tirage personnalisé — 1 question</h3>
-    <div class="prix">39 € <small>· réponse écrite sous 48h</small></div>
-    <p>Tu me confies ta question (amour, retour, silence, décision…), ton prénom
-    et ta date de naissance. Je tire les cartes pour toi, et je t'écris une réponse
-    personnelle, précise et complète — comme une lettre d'une amie qui voit plus loin.</p>
-    <a class="btn" href="#PAYPAL_39">Poser ma question ➜</a>
-  </div>
-
-  <div class="card">
-    <span class="badge">Le grand tirage</span>
+    <div class="prix">39 € <small>· réponse sous 48h</small></div>
+    <p>Ta question, ton prénom, ta date de naissance. Je tire les cartes pour toi et je t'écris une réponse personnelle et complète.</p>
+    <a class="btn" href="tirages.html#question">Poser ma question ➜</a></div>
+  <div class="card"><span class="badge">Le grand tirage</span>
     <h3>Le Grand Tirage — 3 questions + rituel</h3>
-    <div class="prix">79 € <small>· réponse écrite sous 48h</small></div>
-    <p>Trois questions, un tirage approfondi, et ton <em>rituel de pleine lune
-    personnalisé</em> pour accompagner ce que les cartes révèlent. Ma lecture
-    la plus complète.</p>
-    <a class="btn" href="#PAYPAL_79">Commencer mon grand tirage ➜</a>
-  </div>
+    <div class="prix">79 € <small>· réponse sous 48h</small></div>
+    <p>Trois questions, un tirage approfondi et ton rituel de pleine lune personnalisé.</p>
+    <a class="btn" href="tirages.html#grand">Commencer ➜</a></div>
 </section>
-
-<section id="comment">
+<section>
   <h2>🌙 Comment ça se passe</h2>
   <div class="etapes">
     <div class="etape"><div class="num">1</div><p>Tu choisis ton tirage et tu règles en toute sécurité (PayPal ou carte).</p></div>
-    <div class="etape"><div class="num">2</div><p>Tu m'envoies ta question, ton prénom et ta date de naissance via le formulaire reçu.</p></div>
-    <div class="etape"><div class="num">3</div><p>Sous 48h, tu reçois ta lecture écrite, personnelle et détaillée, par email. 💌</p></div>
+    <div class="etape"><div class="num">2</div><p>Tu m'envoies ta question, ton prénom et ta date de naissance.</p></div>
+    <div class="etape"><div class="num">3</div><p>Sous 48h, ta lecture écrite arrive par email. 💌</p></div>
   </div>
   <p class="note">Chaque lecture est préparée pour toi, une par une. Prends ce qui résonne, laisse le reste.</p>
 </section>
-
-<section id="cercle">
+<section>
   <h2>💌 Rejoins le Cercle</h2>
   <div class="card" style="text-align:center">
-    <p>Chaque semaine : l'énergie de la lune, une carte, un conseil.
-    Gratuit, intime, sans spam.</p>
-    <a class="btn" href="#NEWSLETTER">Entrer dans le cercle 🌙</a>
-  </div>
+    <p>Chaque semaine : l'énergie de la lune, une carte, un conseil. Gratuit, sans spam.</p>
+    <a class="btn ghost" href="#NEWSLETTER">Entrer dans le cercle 🌙</a></div>
 </section>
-
-<footer>
-  <p>Madame Lune · Guidance & bien-être</p>
-  <p style="margin-top:8px">Les tirages et lectures sont proposés à des fins de divertissement
-  et de développement personnel. Ils ne remplacent en aucun cas un avis médical,
-  juridique ou financier professionnel.</p>
-  <p style="margin-top:8px">✦ contact : contact@madame-lune.fr ✦</p>
-</footer>
-
-</div>
-</body>
-</html>
+<footer><p>Madame Lune · Guidance &amp; bien-être 🌙</p><p style="margin-top:8px">Lectures proposées à des fins de divertissement et de développement personnel — elles ne remplacent aucun avis médical, juridique ou financier.</p><p style="margin-top:8px"><a href="mentions.html">Mentions &amp; conditions</a> ✦ contact@madame-lune.fr</p></footer>
+</div></body></html>
