@@ -101,3 +101,29 @@ section.vis,.heroimg.vis,.preuve.vis{opacity:1;transform:none}
 @keyframes flotte1{0%,100%{transform:rotate(-9deg) translateY(0)}50%{transform:rotate(-4deg) translateY(-22px)}}
 @keyframes flotte2{0%,100%{transform:rotate(7deg) translateY(0)}50%{transform:rotate(12deg) translateY(-16px)}}
 @media(max-width:760px){.carte-flot.c2{display:none}.carte-flot.c1{width:84px;left:-26px;opacity:.12}}
+/* v7: profissionalizacao — tipografia de marca, hierarquia, respiro */
+body{font-family:'Jost',Georgia,serif;font-weight:400;font-size:1.02rem;letter-spacing:.01em}
+h1,h2,h3,.logo a,.prix{font-family:'Cormorant Garamond',Georgia,serif}
+h1{font-size:2.4rem;font-weight:700}
+h2{font-size:1.7rem;font-weight:600;margin-bottom:26px}
+h3{font-size:1.35rem;font-weight:600}
+.prix{font-size:1.9rem;font-weight:700}
+.prod .prix{font-size:1.45rem}
+.logo a{font-size:1.9rem;font-weight:700;letter-spacing:.2em}
+nav a{font-family:'Jost',sans-serif;text-transform:uppercase;font-size:.78rem;letter-spacing:.14em}
+.btn{font-family:'Jost',sans-serif;font-weight:500;text-transform:uppercase;font-size:.92rem;letter-spacing:.08em}
+.badge{font-family:'Jost',sans-serif;font-weight:500}
+.annonce{font-family:'Jost',sans-serif;letter-spacing:.08em;font-size:.78rem;text-transform:uppercase}
+.tag{font-size:1.05rem}
+section{padding:34px 0}
+.card{padding:28px}
+.heroimg h1{font-size:1.75rem;line-height:1.25}
+.heroimg .voile{padding:30px 26px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.chips span{background:rgba(250,246,237,.16);border:1px solid rgba(250,246,237,.45);color:#fff;
+  font-family:'Jost',sans-serif;font-size:.74rem;letter-spacing:.06em;padding:5px 12px;border-radius:99px;backdrop-filter:blur(4px)}
+.etape p{padding-top:4px}
+footer{font-family:'Jost',sans-serif;letter-spacing:.03em}
+summary{font-family:'Jost',sans-serif;font-weight:500;letter-spacing:.02em}
+blockquote{font-family:'Cormorant Garamond',serif;font-size:1.15rem}
+.preuve b{font-family:'Cormorant Garamond',serif;font-size:1.35rem}
