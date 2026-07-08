@@ -138,3 +138,7 @@ nav a.cta-nav:hover{filter:brightness(1.08)}
 .footcols a{display:block;color:#6b6284;text-decoration:none;padding:2px 0;font-size:.85rem}
 .footcols a:hover{color:var(--or)}
 @media(max-width:520px){.minipropos{flex-direction:column;text-align:center}}
+/* v9: faixa de prova refinada */
+.preuve{gap:30px;padding:34px 0 10px;margin-top:8px}
+.preuve div{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;font-family:'Jost',sans-serif}
+.preuve b{font-size:1.9rem;font-weight:700;color:var(--amethyste);letter-spacing:.01em;margin-bottom:4px}
