@@ -93,3 +93,11 @@ section,.heroimg,.preuve{opacity:0;transform:translateY(16px);transition:opacity
 section.vis,.heroimg.vis,.preuve.vis{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}
   section,.heroimg,.preuve{opacity:1;transform:none}}
+/* v5.1: cartas de tarot flutuando */
+.carte-flot{position:fixed;z-index:0;pointer-events:none;width:120px;border-radius:10px;
+  box-shadow:0 10px 30px rgba(42,33,64,.25);opacity:.16}
+.carte-flot.c1{left:-34px;top:26vh;animation:flotte1 11s ease-in-out infinite}
+.carte-flot.c2{left:30px;top:58vh;width:96px;animation:flotte2 14s ease-in-out infinite;opacity:.12}
+@keyframes flotte1{0%,100%{transform:rotate(-9deg) translateY(0)}50%{transform:rotate(-4deg) translateY(-22px)}}
+@keyframes flotte2{0%,100%{transform:rotate(7deg) translateY(0)}50%{transform:rotate(12deg) translateY(-16px)}}
+@media(max-width:760px){.carte-flot.c2{display:none}.carte-flot.c1{width:84px;left:-26px;opacity:.12}}

@@ -32,6 +32,14 @@
     s.style.animationDelay = (Math.random() * 8) + 's';
     document.body.appendChild(s);
   }
+
+  // cartas de tarot flutuando (lado esquerdo)
+  var c1 = document.createElement('img');
+  c1.src = 'deco_lune.jpg'; c1.className = 'carte-flot c1'; c1.alt = '';
+  document.body.appendChild(c1);
+  var c2 = document.createElement('img');
+  c2.src = 'deco_pendu.jpg'; c2.className = 'carte-flot c2'; c2.alt = '';
+  document.body.appendChild(c2);
   // fade-up
   var obs = new IntersectionObserver(function(es){
     es.forEach(function(e){ if (e.isIntersecting) e.target.classList.add('vis'); });
