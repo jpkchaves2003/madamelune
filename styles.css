@@ -127,3 +127,14 @@ footer{font-family:'Jost',sans-serif;letter-spacing:.03em}
 summary{font-family:'Jost',sans-serif;font-weight:500;letter-spacing:.02em}
 blockquote{font-family:'Cormorant Garamond',serif;font-size:1.15rem}
 .preuve b{font-family:'Cormorant Garamond',serif;font-size:1.35rem}
+/* v8: arquitetura de conversao */
+nav a.cta-nav{background:linear-gradient(135deg,var(--or2),var(--or));color:#fff!important;font-weight:500}
+nav a.cta-nav:hover{filter:brightness(1.08)}
+.minipropos{display:flex;gap:18px;align-items:center}
+.minipropos img{width:88px;height:88px;border-radius:50%;object-fit:cover;object-position:top;border:2px solid var(--or2);flex:0 0 88px}
+.freeband{text-align:center;border:1.5px dashed var(--or2);background:linear-gradient(160deg,#fff,#faf3e3)}
+.footcols{display:flex;gap:34px;justify-content:center;flex-wrap:wrap;text-align:left;margin-bottom:14px}
+.footcols b{display:block;color:var(--amethyste);margin-bottom:6px;font-size:.85rem;text-transform:uppercase;letter-spacing:.08em}
+.footcols a{display:block;color:#6b6284;text-decoration:none;padding:2px 0;font-size:.85rem}
+.footcols a:hover{color:var(--or)}
+@media(max-width:520px){.minipropos{flex-direction:column;text-align:center}}
