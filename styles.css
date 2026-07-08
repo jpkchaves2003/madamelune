@@ -62,3 +62,34 @@ blockquote{border-left:3px solid var(--or2);padding:8px 16px;margin:14px 0;font-
 .cat span{position:relative;color:#fff;font-size:1.1rem;font-weight:bold;text-shadow:0 2px 10px rgba(0,0,0,.65);background:rgba(13,9,34,.35);padding:8px 18px;border-radius:99px}
 .paiements{letter-spacing:.14em;font-size:.9rem;color:var(--lavande);margin-top:10px}
 @media(max-width:420px){.grille{grid-template-columns:1fr}}
+/* v5: vida no site — hovers, astros, roda zodiacal */
+.card,.prod,.btn,nav a,details,.cat,input,select,textarea{transition:all .28s ease}
+.card:hover,.prod:hover,details:hover{transform:translateY(-4px);border-color:var(--or2);
+  box-shadow:0 12px 30px rgba(42,33,64,.16),0 0 0 2px rgba(212,169,74,.35)}
+.prod:hover img{transform:scale(1.04)}
+.prod img{transition:transform .5s ease}
+.prod{overflow:hidden}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(184,137,47,.45);filter:brightness(1.06)}
+.btn.ghost:hover{background:rgba(91,63,141,.08)}
+.cat:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(42,33,64,.22)}
+.cat:hover span{background:rgba(91,63,141,.6)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--or2);
+  box-shadow:0 0 0 3px rgba(212,169,74,.3)}
+input:hover,select:hover,textarea:hover{border-color:var(--lavande)}
+/* estrelinhas flutuantes */
+.sparkle{position:fixed;color:var(--or2);pointer-events:none;z-index:1;user-select:none;
+  animation:twk linear infinite;opacity:0}
+@keyframes twk{0%,100%{opacity:0;transform:translateY(0) scale(.7)}
+  25%{opacity:.55}50%{opacity:.25;transform:translateY(-26px) scale(1)}75%{opacity:.5}}
+/* roda zodiacal girando */
+.roue{position:fixed;right:-170px;top:22vh;width:420px;height:420px;z-index:0;
+  pointer-events:none;opacity:.10;animation:tourne 140s linear infinite}
+@keyframes tourne{to{transform:rotate(360deg)}}
+@media(max-width:760px){.roue{width:300px;height:300px;right:-150px;opacity:.08}}
+/* conteudo acima dos enfeites */
+.wrap,nav,.annonce,.logo{position:relative;z-index:2}
+/* fade-up das secoes */
+section,.heroimg,.preuve{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+section.vis,.heroimg.vis,.preuve.vis{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}
+  section,.heroimg,.preuve{opacity:1;transform:none}}
